@@ -4,6 +4,7 @@ GEM
     coderay (1.1.0)
     daemons (1.1.9)
     dictionary (1.0.0)
+    erubis (2.7.0)
     eventmachine (1.0.3)
     hashie (2.0.5)
     method_source (0.8.2)
@@ -31,6 +32,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  erubis
   hashie
   pry
   rake
