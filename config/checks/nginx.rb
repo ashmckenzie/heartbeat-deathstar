@@ -1,7 +1,7 @@
 Stethoscope.check :nginx do |response|
   url = "http://new.the-rebellion.net"
 
-  page = WebPage.new(url)
+  page = Heartbeat::WebPage.new(url)
   page.check!
 
   response[:url] = url
