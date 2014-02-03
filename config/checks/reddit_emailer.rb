@@ -1,7 +1,7 @@
 Stethoscope.check :reddit_emailer do |response|
-  cron_entries = `crontab -l | grep "bin/reddit-emailer"`.chomp
-  status = (cron_entries.split("\n").count == 2) ? 200 : 500
+  cron_entries_count = `crontab -l | grep "bin/reddit-emailer"`.chomp.split("\n").count
+  status = (cron_entries_count == 2) ? 200 : 500
 
-  response[:cron_entries] = cron_entries
+  response[:cron_entries_count] = cron_entries_count
   response[:status] = status
 end
