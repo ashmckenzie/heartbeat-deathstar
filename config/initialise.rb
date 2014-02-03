@@ -1,3 +1,4 @@
+require 'erubis'
 require 'tilt/erb'
 require 'stethoscope'
 require 'rest-client'
